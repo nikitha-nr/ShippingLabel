@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Shipping Label Maker is an application that collects shipping information from the user and
 prints a shipping label. The heart of the app is a “Wizard” component. The main logic here is written in Wizard Component and how it sequences through different steps in the processing of creating a shipping label.
 
-# Tech Stack used
+## Tech Stack used
 Reach Hooks <br/>
 Functional Components<br/>
 Hooks<br/>
