@@ -1,4 +1,21 @@
-.sender{
+.labelWeight{
+    margin-top:1.25%
+}
+
+.sender, .weight, .shipping{
 margin-left:1%;
 margin-top:10%
 }
+.radio{
+    margin-top:2%
+}
+
+.receiver-confirm, .weight-confirm{
+margin-left:1%;
+}
+
+.confirm{
+      margin-top:
+      /* padding:15px
+      margin-left:25% */
+  }

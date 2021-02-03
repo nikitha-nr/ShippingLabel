@@ -41,11 +41,11 @@ class GetReceiverAddress extends React.Component{
                     <div className={classes.nameStreet}>
                         <div className={classes.textField}>
                             <InputLabel className={classes.labelNameStreet} htmlFor="standard-required">Name:</InputLabel> 
-                            <TextField  name="name" className={classes.TextField}  size="small" label="Please enter a valid name" variant="outlined" value={this.props.wizardContext.name} onChange={this.props.onReceiveHandler}/>  
+                            <TextField  name="name" className={classes.TextField}  size="small" label="Please enter a valid name" variant="outlined" value={this.props.wizardContext.to.name} onChange={this.props.onReceiveHandler}/>  
                         </div><br/>
                         <div className={classes.textField}>
                             <InputLabel className={classes.labelNameStreet} htmlFor="standard-required">Street:</InputLabel> 
-                            <TextField name="street" className={classes.TextField}  size="small" label="Stree Address please!" variant="outlined" value={this.props.wizardContext.street} onChange={this.props.onReceiveHandler}/>
+                            <TextField name="street" className={classes.TextField}  size="small" label="Stree Address please!" variant="outlined" value={this.props.wizardContext.to.street} onChange={this.props.onReceiveHandler}/>
                         </div>
                     </div>
                     <div className={classes.csz}>

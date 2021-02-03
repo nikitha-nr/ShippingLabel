@@ -12,13 +12,14 @@ const styles = (theme) => ({
 });
 
 const Buttons= (props)=>{
-        const { classes, current, next, prev } = props;
+        const { classes, current } = props;
         return (
                  <>
                     <div className={classes.btn}>
                       {current===1 ? null:(<Button variant="outlined" size="small" color="secondary" onClick={props.prev}>Previous</Button> )}&nbsp;&nbsp;
                         
                         {current > 4 ? null:(<Button variant="outlined" size="small" color="primary" onClick={props.next}>Next</Button>)}
+                        {/* {current === 5 ? null:(<Button variant="outlined" size="small" color="primary">Dummy</Button>)} */}
                     </div>
                 </>
         )
