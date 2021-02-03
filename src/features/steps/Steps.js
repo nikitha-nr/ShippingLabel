@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {PropTypes} from 'prop-types';
 import GetSenderAddress from '../../features/steps/GetSenderAddress';
 import GetReceiverAddress from '../../features/steps/GetReceiverAddress';
@@ -7,34 +7,26 @@ import GetShippingOption from '../../features/steps/GetShippingOption';
 import Confirm from '../../features/steps/Confirm';
 
 
-class Steps extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            prev: 1,
-            next: 2,
-            end: 3,
-        }
-    };
+const Steps =(props)=>{
 
-    wizardSteps() {
-    switch (this.props.steps) {
-      case 1: return <GetSenderAddress wizardContext={this.props.wizardContext} onSendHandler={this.props.onAction} /> 
-      case 2: return <GetReceiverAddress wizardContext={this.props.wizardContext} onReceiveHandler={this.props.onReceive} />
-      case 3: return <GetWeight wizardContext={this.props.wizardContext} weight={this.props.weight}/>
-      case 4: return <GetShippingOption wizardContext={this.props.wizardContext} shipping={this.props.shipping}/>
-      case 5: return <Confirm wizardContext={this.props.wizardContext} confirm={this.props.complete}/>
-    default:     
+    const[state,setState] = useState({prev:1,next:2,end:3});
+
+      const wizardSteps=() => {
+      switch (props.steps) {
+      case 1: return <GetSenderAddress wizardContext={props.wizardContext} onSendHandler={props.onAction} /> 
+      case 2: return <GetReceiverAddress wizardContext={props.wizardContext} onReceiveHandler={props.onReceive} />
+      case 3: return <GetWeight wizardContext={props.wizardContext} weight={props.weight}/>
+      case 4: return <GetShippingOption wizardContext={props.wizardContext} shipping={props.shipping}/>
+      case 5: return <Confirm wizardContext={props.wizardContext} confirm={props.complete}/>
+      default:     
     }
   };
-        render(){
-            const currentPage = this.wizardSteps();
+      const currentPage = wizardSteps();
         return(
             <>
                {currentPage}
             </>
-        )
-    };
+        );
 }
 
 Steps.propTypes = {

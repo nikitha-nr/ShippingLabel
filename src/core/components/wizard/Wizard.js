@@ -28,25 +28,7 @@ const styles = (theme)=>({
       padding:'5px'
   },
 });
-// const Wizard = (props) => {
-//     const [wizardContext, setwizardContext]= useState(props.wizardContext)
-//     const classes = useStyles();
-//     return (
-//     <>
-//         <Card className={classes.root} variant="outlined">
-//             <CardContent>
-//                 <div className={classes.shipping}>
-//                     <h1>Shipping Label Maker</h1>
-//                     <LinearProgress variant="determinate" value={50} />
-//                     <p> Enter Sender's address:</p>
-//                     <GetSenderAddress wizardContext={wizardContext.from}/>
-//                 </div>
-//             </CardContent>
-//         </Card>
-//     </>
-//     )
 
-// }
  class Wizard extends React.Component {
     constructor(props){
         super(props);
@@ -55,6 +37,7 @@ const styles = (theme)=>({
             currentStep:1,
             };
                     this.success = this.success.bind(this);
+                    
     }
     onSend = (e)=>{
      const value = e.target.value;
