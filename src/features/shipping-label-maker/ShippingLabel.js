@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Confirm from '../steps/Confirm';
 
 const ShippingLabel = (props) => {
     const { from, to, weight, shippingOption } = props.wizardData;
@@ -9,17 +9,17 @@ const ShippingLabel = (props) => {
                 <div> 
                     <p>Shipping Label:</p>
                    <div>
-                        From: 
+                        From: {from.name}
                     </div>
                    
                     <div>
-                        To: 
+                        To: {to.name}
                     </div>
                      <div>
-                        Weight:  lbs
+                        Weight:{weight.weight}  lbs
                     </div>
                      <div>
-                        Shipping Option: 
+                        Shipping Option: {shippingOption.shipping}
                     </div>
                 </div>
             )
