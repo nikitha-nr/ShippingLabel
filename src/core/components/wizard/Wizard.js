@@ -55,12 +55,6 @@ const styles = (theme)=>({
             currentStep:1,
             };
                     this.success = this.success.bind(this);
-                    // this.onSend = this.onSend.bind(this);
-                    // this.onReceive = this.onReceive.bind(this);
-                    // this.getWeight = this.getWeight.bind(this);
-                    // this.getShipping=this.getShipping.bind(this);
-                    // this.onPrev=this.onPrev.bind(this);
-                    // this.onNext=this.onNext.bind(this);
     }
     onSend = (e)=>{
      const value = e.target.value;

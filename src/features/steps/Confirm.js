@@ -5,9 +5,6 @@ import {costCalc} from '../../core/components/wizard/Wizard'
 
 
 const Confirm =(props)=>{
-    // const {from,to,weight,shippingOption}=props.wizardContext;
-    //     const {confirm} =props;
-    //   const confirmInfo = () => confirm(props.wizardContext);
 
     const { from } = props.wizardContext;
     const { to } = props.wizardContext;
@@ -46,7 +43,7 @@ const Confirm =(props)=>{
         </div>
          
         <div class="confirm">
-            <Button variant="outlined" size="small" color="primary" onClick={props.confirm}>Confirm</Button> 
+            <Button variant="outlined" size="small" color="primary" onClick={confirmInfo}>Confirm</Button> 
         </div>
        </> 
     );

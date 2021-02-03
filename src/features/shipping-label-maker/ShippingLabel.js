@@ -3,20 +3,23 @@ import React from 'react';
 
 const ShippingLabel = (props) => {
     const { from, to, weight, shippingOption } = props.wizardData;
+
+
     return (
                 <div> 
                     <p>Shipping Label:</p>
-                    <div>
-                        From: {from}
+                   <div>
+                        From: 
                     </div>
+                   
                     <div>
-                        To: {to}
+                        To: 
                     </div>
                      <div>
-                        Weight: {weight} lbs
+                        Weight:  lbs
                     </div>
                      <div>
-                        Shipping Option: {shippingOption} 
+                        Shipping Option: 
                     </div>
                 </div>
             )

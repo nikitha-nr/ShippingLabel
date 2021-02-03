@@ -1,16 +1,8 @@
-import React,{useState} from 'react';
+import React from 'react';
 import Wizard from '../../core/components/wizard/Wizard';
 import Header from '../../core/components/wizard/Header';
 import ShippingLabel from '../shipping-label-maker/ShippingLabel';
 
-
-// const ShippingLabelMaker=()=>{
- 
-//  const [state,setState] = useState({isComplete: false});
-
-//   const success=(data)=> {
-//     setState({data: data, isComplete: true});
-//     };
 class ShippingLabelMaker extends React.Component{
     constructor(props){
         super(props);
@@ -22,7 +14,6 @@ class ShippingLabelMaker extends React.Component{
     }
     createLabel=(wizardData)=>{
         this.setState({wizardData:wizardData, isComplete:true})
-       // console.log(data)
     };
     render(){
         return (
